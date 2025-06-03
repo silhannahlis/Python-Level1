@@ -1,0 +1,40 @@
+# article = "Python programlama dili, yazılım geliştirme, veri analizi ve daha fazlası için güçlü bir dildir."
+
+# 1- "article" değişkenindeki toplam karakter sayısını bul.
+# 2- "article" içindeki ilk 10 karakteri al.
+# 3- "article" içindeki son 10 karakteri al.
+# 4- "article" değişkenindeki tüm karakterleri büyük harfe çevir.
+# 5- "article" değişkeninde kaç tane "i" harfi var?
+# 6- "article" ifadesini tersten yazdır.
+# 7- "article" içindeki kelimeleri liste haline getir.
+# 8- "article" içindeki ilk geçen 'veri' kelimesinin başlangıç index'ini bul.
+# 9- "article" cümlesinde geçen "dil" kelimesini "language" ile değiştir.
+# 10- Aşağıdaki değişkenlerle aşağıdaki formatta bir cümle oluştur:
+# name, surname, city = "Ahmet", "Demir", "Ankara"
+# Çıktı: "Ahmet Demir, Ankara şehrinde yaşamaktadır."
+
+article = "Python programlama dili, yazılım geliştirme, veri analizi ve daha fazlası için güçlü bir dildir."
+
+# 1- "article" değişkenindeki toplam karakter sayısını bul.
+result = len(article)
+print(len(article))
+
+# 2- "article" içindeki ilk 10 karakteri al.
+print(article[:11])
+
+# 3- "article" içindeki son 10 karakteri al.
+print(article[-11:])
+
+# 4- "article" değişkenindeki tüm karakterleri büyük harfe çevir.
+print(article.upper())
+
+# 5- "article" değişkeninde kaç tane "i" harfi var?
+print(article.count('i'))
+
+# 6- "article" ifadesini tersten yazdır.
+print(article[::-1])
+
+# 7- "article" içindeki kelimeleri liste haline getir.
+kelime = article.split()
+print(kelime)
+print(" ".join(kelime))
