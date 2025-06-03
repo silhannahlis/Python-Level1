@@ -1,0 +1,45 @@
+# numbers = [4, 7, 12, 25, 3, 8, 19, 21, 5, 1]
+# 1- Listenin uzunluğunu bul.
+# 2- İlk 3 elemanı al.
+# 3- Son 3 elemanı al.
+# 4- Listedeki en büyük ve en küçük sayıyı bul.
+# 5- Listedeki sayıların toplamını bul.
+# 6- Listedeki çift sayıları ayrı bir listeye al.
+# 7- Listedeki sayıları küçükten büyüğe sırala.
+# 8- Listedeki tüm elemanların karesini içeren yeni bir liste oluştur.
+# 9- Listedeki ortalamadan büyük sayıları yazdır.
+# 10- Kullanıcıdan alınan bir sayının listede olup olmadığını kontrol et (input() ile).
+
+numbers = [4, 7, 12, 25, 3, 8, 19, 21, 5, 1]
+
+# 1- Listenin uzunluğunu bul.
+print(len(numbers))
+
+# 2- İlk 3 elemanı al.
+print(numbers[:3])
+
+# 3- Son 3 elemanı al.
+print(numbers[-3:])
+
+# 4- Listedeki en büyük ve en küçük sayıyı bul.
+print(max(numbers))
+
+# 5- Listedeki sayıların toplamını bul.
+print(sum(numbers))
+
+# 6- Listedeki çift sayıları ayrı bir listeye al.
+no = [numara for numara in numbers if numara % 2 == 0]
+print(no)
+
+# 7- Listedeki sayıları küçükten büyüğe sırala.
+print(sorted(numbers))
+
+# 8- Listedeki tüm elemanların karesini içeren yeni bir liste oluştur.
+print(sorted(numbers, reverse=True))
+
+# 9- Listedeki ortalamadan büyük sayıları yazdır.
+print([num for num in numbers if num > (sum(numbers) / len(numbers))])
+
+# 10- Kullanıcıdan alınan bir sayının listede olup olmadığını kontrol et (input() ile).
+no = int(input("Bir sayı Giriniz: "))
+print([num for num in numbers if no == num])
