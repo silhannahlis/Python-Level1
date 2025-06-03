@@ -1,0 +1,7 @@
+#Daire alanı ve çevresi
+pi = 3.14
+r = float(input('Yarıçap: '))
+dAlani = pi* (r**2)
+dCevre = 2 * pi * r
+
+print(f'Dire aAlanı:{dAlani:.2f}\n Daire Çevresi:{dCevre:.2f}')
