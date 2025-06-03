@@ -1,0 +1,66 @@
+
+# website = "http://www.sadikturan.com"
+# course = "Python Kursu: Baştan sona Python Programlama Rehberiniz(40 saat)"
+
+# 1- "course" dizisinde kaç karakter var.
+# 2-"website" içinden "www" karakterlerini alın.
+# 3- "website" içinden "com" karakterlerini alın.
+# 4- "course" içinden ilk 15 ve son 15 karkterlerini alın.
+# 5- "course" ifadesinde ki karakterleri tersten yazdırın.
+# 6- Aşağıdaki vrilen değişkenler ile ekrana aşağıdaki ifadeyi yazdırın.
+#name, surname, age, job = "Bora", "Yılmaz", 32, "Mühendis"
+
+
+website = "http://www.sadikturan.com"
+course = "Python Kursu: Baştan sona Python Programlama Rehberiniz(40 saat)"
+
+# 1- "course" dizisinde kaç karakter var.
+c_len = len(course)
+print(f"1- {c_len}")
+#print("\n")
+
+# 2-"website" içinden "www" karakterlerini alın.
+# I.YOL
+yeni_website = website.replace("w","")
+print(f"2-  {yeni_website}")
+#print("\n")
+#II.YOL
+yeni_website = ""
+for harf in website:
+    if harf != "w":
+        yeni_website += harf
+print(f"2.1- {yeni_website}")
+#print("\n")
+
+# 3- "website" içinden "com" karakterlerini alın.
+#yeni_website = ""
+yeni_website =  website.replace("com","")
+print(f"3- {yeni_website}")
+#print("\n")
+
+# 4- "course" içinden ilk 15 ve son 15 karkterlerini alın.
+yeni_website = website[:15] + website[-15:]
+print(f"4- {yeni_website}")
+#print("\n")
+
+# 5- "course" ifadesinde ki karakterleri tersten yazdırın.
+# I.YOL
+yeni_website = website[::-1]
+print(f"5- {yeni_website}")
+#print("\n")
+#II.YOL
+yeni_website = ""
+for harf in website:
+    yeni_website = harf + yeni_website
+print(f"5.1- {yeni_website}")
+
+name, surname, age, job = "Bora", "Yılmaz", 32, "Mühendis"
+
+# 6- Yukarıda vrilen değişkenler ile ekrana aşağıdaki ifadeyi yazdırın.
+''' "Benim adım Bora Yılmaz, Yaşım 32 ve mesleğim Mühendis" '''
+
+print(f"Benim adım {name} {surname}, yaşım {age} ve mesleğim {job}.")
+
+
+
+
