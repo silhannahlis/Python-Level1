@@ -1,0 +1,75 @@
+# 1- Kullanıcıdan adını ve soyadını alıp "Merhaba, [Ad] [Soyad]!" yazdır.
+# 2- Kullanıcıdan iki sayı alıp toplamını yazdır.
+# 3- Kullanıcının doğum yılını al ve yaşını hesapla.
+# 4- Kullanıcıdan bir kelime al ve kelimenin uzunluğunu yazdır.
+# 5- Kullanıcının girdiği sayının tek mi çift mi olduğunu yazdır.
+# 6- Kullanıcının girdiği metni tersten yazdır.
+# 7- Kullanıcının adı 5 harften uzunsa "Güzel bir isim!" değilse "Kısa ama öz!" yazdır.
+# 8- Kullanıcıdan bir cümle al ve kaç kelime olduğunu hesapla.
+# 9- Kullanıcıdan alınan iki sayıyı karşılaştır (hangisi büyük).
+# 10- Kullanıcıdan alınan sınav notuna göre harf notunu yazdır (90+: A, 80+: B, 70+: C, vs.).
+
+# 1- Kullanıcıdan adını ve soyadını alıp "Merhaba, [Ad] [Soyad]!" yazdır.
+name = input("Adınızı giriniz:")
+surname = input("Soyadınızı giriniz:")
+print(f"Merhaba, {name} {surname}!")
+
+# 2- Kullanıcıdan iki sayı alıp toplamını yazdır.
+number1 = int(input("Birinci sayı:"))
+number2 = int(input("ikinci sayı:"))
+print(f"Toplam: {number1 + number2}")
+
+# 3- Kullanıcının doğum yılını al ve yaşını hesapla.
+from datetime import datetime
+age = int(input("Doğum tarihinizi giriniz:"))
+print("Yaşınız: " + str(datetime.now().year - age))
+
+# 4- Kullanıcıdan bir kelime al ve kelimenin uzunluğunu yazdır.
+article = input("Bir kelime giriniz:")
+print(len(article))
+
+# 5- Kullanıcının girdiği sayının tek mi çift mi olduğunu yazdır.
+number = int(input("Bir sayı giriniz: "))
+if(number % 2 == 0):
+    print("çift sayı girdiniz")
+else:
+    print("tek sayı girdiniz")
+    
+
+# 6- Kullanıcının girdiği metni tersten yazdır.
+article = input("Bir metin giriniz:")
+print(article[::-1])
+
+# 7- Kullanıcının adı 5 harften uzunsa "Güzel bir isim!" değilse "Kısa ama öz!" yazdır.
+#I.YOL
+name = input("İsminiz:")
+if(len(name) <= 5):
+    print("Kısa ama öz!")
+else:
+    print("Güzel bir isim!")
+#II.YOL
+print("Kısa ama öz!" if len(name) <= 5 else "Güzel bir isim!")
+
+# 8- Kullanıcıdan bir cümle al ve kaç kelime olduğunu hesapla.
+article = input("Bir metin giriniz:")
+print(len(article.split()))
+print(len(input("Bir metin giriniz:").split()))
+
+# 9- Kullanıcıdan alınan iki sayıyı karşılaştır (hangisi büyük).
+#I.YOL
+number1 = int(input("1. Sayı:"))
+number2 = int(input("2. Sayı:"))
+print("Eşit" if number1 == number2 else (f"{number1}" if number1 > number2 else f"{number2}"))
+#II.YOL
+print("Eşit" if number1 == number2 else f"{max(number1,number2)}")
+
+# 10- Kullanıcıdan alınan sınav notuna göre harf notunu yazdır (90+: A, 80+: B, 70+: C, vs.).
+grade = int(input("Sınav notonu giriniz:"))
+print(
+    "A" if grade >= 90 else
+    "B" if grade >= 80 else
+    "C" if grade >= 70 else
+    "D" if grade >= 60 else
+    "E" if grade >= 50 else
+    "F"
+)
