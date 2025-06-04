@@ -1,0 +1,195 @@
+# 1- Kullanıcıdan bir metin al ve bu metinde kaç tane "a" harfi geçtiğini yazdır.
+# 2- Kullanıcının girdiği cümledeki boşluk karakterlerini "-" ile değiştir.
+# 3- Girilen metni tamamen büyük harfe çevir ve ekrana yazdır.
+# 4- Girilen metni tamamen küçük harfe çevir ve yazdır.
+# 5- Kullanıcının adını ve soyadını al, baş harfleri büyük olacak şekilde yazdır (title case).
+# 6- Kullanıcıdan bir cümle al ve bu cümleyi kelimelere ayırarak bir listeye dönüştür.
+# 7- Cümledeki kelimeleri "-" ile birleştirip yazdır.
+# 8- Kullanıcıdan bir metin al ve içinde geçen "Python" kelimesinin başlangıç indeksini yazdır.
+# 9- Kullanıcının girdiği kelimeyi 30 karakterlik bir alan içinde ortalayarak yazdır.
+# 10- Kullanıcıdan virgülle ayrılmış sayılar al ve bu sayıların toplamını, ortalamasını yazdır.
+# 11- Girilen sayıların en büyüğünü ve en küçüğünü bul.
+# 12- Sayıları küçükten büyüğe sıralayıp yazdır.
+# 13- Kullanıcının girdiği bir kelimenin uzunluğunu (karakter sayısını) yazdır.
+# 14- Kullanıcıdan bir cümle al ve ilk 5 karakterini yazdır.
+# 15- Kullanıcının girdiği cümlenin son 10 karakterini yazdır.
+# 16- Girilen metni tersten yazdır.
+# 17- Kullanıcının adının sadece ilk iki harfini büyük harf olarak yazdır.
+# 18- Kullanıcıdan bir metin al ve içinde kaç tane "e" harfi olduğunu yazdır.
+# 19- Kullanıcının yazdığı metindeki tüm noktalama işaretlerini boşlukla değiştir.
+# 20- Girilen cümleyi baş harfleri büyük olacak şekilde (title) dönüştür.
+# 21- Kullanıcının adını ve soyadını küçük harflerle yazdır.
+# 22- Kullanıcının yazdığı bir kelimenin ilk ve son harfini yazdır.
+# 23- Bir cümlede geçen tüm kelimeleri ters sırayla yazdır (sondan başa doğru).
+# 24- Kullanıcıdan alınan bir cümlede kaç kelime olduğunu bul (split kullan).
+# 25- Kullanıcının yazdığı metinde geçen ilk boşluğun index'ini bul.
+# 26- Kullanıcıdan 5 sayı al, bunları listeye ekle ve toplamlarını yazdır.
+# 27- Liste içindeki sayıların ortalamasını hesapla.
+# 28- Listenin en küçük ikinci elemanını bul.
+# 29- Listeyi büyükten küçüğe sırala.
+# 30- Listedeki sayıların sadece tek olanlarını ekrana yazdır.
+# 31- Liste içindeki çift sayıların sayısını bul.
+# 32- Kullanıcının girdiği sayıların karelerini yeni bir liste olarak oluştur.
+# 33- Kullanıcının girdiği sayılardan kaç tanesi 10’dan büyük?
+
+#############################################################
+
+# 1- Kullanıcıdan bir metin al ve bu metinde kaç tane "a" harfi geçtiğini yazdır. --
+metin = input("Bir metin giriniz:")
+print(metin.lower().count("a"))
+
+# 2- Kullanıcının girdiği cümledeki boşluk karakterlerini "-" ile değiştir. --
+metin = input("Bir metin giriniz:")
+print(metin.replace(' ','-'))
+
+# 3- Girilen metni tamamen büyük harfe çevir ve ekrana yazdır. --
+metin = input("Bir metin giriniz:")
+print(metin.upper())
+
+# 4- Girilen metni tamamen küçük harfe çevir ve yazdır. --
+metin = input("Bir metin giriniz:")
+print(metin.lower())
+
+# 5- Kullanıcının adını ve soyadını al, baş harfleri büyük olacak şekilde yazdır (title case). --
+name = input("Adınızı:").title()
+surname = input("Soyadınız:").title()
+print(f"{name} {surname}")
+
+# 6- Kullanıcıdan bir cümle al ve bu cümleyi kelimelere ayırarak bir listeye dönüştür. --
+metin = input("Bir metin giriniz:").split()
+
+# 7- Cümledeki kelimeleri "-" ile birleştirip yazdır. --
+cumle = "Cümledeki kelimeleri ile birleştirip yazdır."
+print(cumle.replace(" ","-"))
+
+# 8- Kullanıcıdan bir metin al ve içinde geçen "Python" kelimesinin başlangıç indeksini yazdır. --
+metin = input("Bir metin giriniz:")
+print(metin.find("python"))
+print(metin.lower().find("python"))
+
+
+# 9- Kullanıcının girdiği kelimeyi 30 karakterlik bir alan içinde ortalayarak yazdır. --
+word = input("Bir kelime yazınız: ")
+print(word.center(30))
+
+### 10- Kullanıcıdan virgülle ayrılmış sayılar al ve bu sayıların toplamını, ortalamasını yazdır. --
+numbers = input("Virgülle ayrılmış sayılar giriniz")
+no = [int(no.strip()) for no in numbers.split(",")]
+print(
+    f"Girdiğiniz sayıların toplamı {sum(no)}.\n"
+    f"Girdiğiniz sayıların ortalaması:{sum(no) / len(no)}"
+ )
+
+### 11- Girilen sayıların en büyüğünü ve en küçüğünü bul. --
+numbers = input("Virgülle ayrılmış sayılar giriniz")
+no = [int(no.strip()) for no in numbers.split(",")]
+print(
+    f"En büyük sayı: {max(no)}\n"
+    f"En küçük sayı: {min(no)}"
+)
+
+### 12- Sayıları küçükten büyüğe sıralayıp yazdır. --
+numbers = input("Virgülle ayrılmış sayılar giriniz")
+no = [int(no.strip()) for no in numbers.split(",")]
+print(sorted(no))
+
+# 13- Kullanıcının girdiği bir kelimenin uzunluğunu (karakter sayısını) yazdır. --
+word = input("Bir kelime yazınız: ")
+print(f"Karakter sayısı: {len(word)}")
+
+# 14- Kullanıcıdan bir cümle al ve ilk 5 karakterini yazdır. --
+cumle = input("Bir cümle giriniz: ")
+print(cumle[:5])
+
+# 15- Kullanıcının girdiği cümlenin son 10 karakterini yazdır. --
+cumle = input("Bir cümle giriniz: ")
+print(cumle[-10:])
+
+# 16- Girilen metni tersten yazdır. --
+cumle = input("Bir cümle giriniz: ")
+print(cumle[::-1])
+
+# 17- Kullanıcının adının sadece ilk iki harfini büyük harf olarak yazdır. --
+name = input("Adınızı:")
+print(name[:2].upper())
+print(name[:2].upper() + name[2:])
+
+# 18- Kullanıcıdan bir metin al ve içinde kaç tane "e" harfi olduğunu yazdır. --
+metin = input("Bir metin giriniz:")
+print(metin.lower().count("e"))
+
+# 19- Kullanıcının yazdığı metindeki tüm noktalama işaretlerini boşlukla değiştir.
+
+
+# 20- Girilen cümleyi baş harfleri büyük olacak şekilde (title) dönüştür. --
+cumle = input("Bir cümle giriniz: ")
+print(cumle.title())
+
+# 21- Kullanıcının adını ve soyadını küçük harflerle yazdır. --
+name = input("Adınızı:")
+surname = input("Soyadınız:")
+print(f"{name} {surname}".lower())
+
+# 22- Kullanıcının yazdığı bir kelimenin ilk ve son harfini yazdır. --
+word = input("Bir kelime yazınız: ")
+print(word[:1] + " " + word[-1:])
+
+# 23- Bir cümlede geçen tüm kelimeleri ters sırayla yazdır (sondan başa doğru). --
+cumle = input("Bir cümle giriniz: ").split()
+print(cumle[::-1])
+
+# 24- Kullanıcıdan alınan bir cümlede kaç kelime olduğunu bul (split kullan). --
+cumle = input("Bir cümle giriniz: ").split()
+print(len(cumle))
+
+# 25- Kullanıcının yazdığı metinde geçen ilk boşluğun index'ini bul. --
+metin = input("Bir metin giriniz:")
+print(metin.find(" "))
+
+### 26- Kullanıcıdan 5 sayı al, bunları listeye ekle ve toplamlarını yazdır. --
+numbers = input("Virgülle ayrılmış 5 sayı giriniz")
+no = [int(no.strip()) for no in numbers.split(",")]
+print(sum(no))
+
+# 27- Liste içindeki sayıların ortalamasını hesapla. --
+number = 1, 2, 3, 5, 6
+hesapla = sum(number) / len(number)
+
+# 28- Listenin en küçük ikinci elemanını bul. --
+k = sorted(number)
+print(k[1])
+
+# 29- Listeyi büyükten küçüğe sırala. --
+k = sorted(number,reverse=True)
+
+### 30- Listedeki sayıların sadece tek olanlarını ekrana yazdır. --
+print([no for no in number if no % 2 == 1])
+
+# 31- Liste içindeki çift sayıların sayısını bul. --
+print(len([no for no in number if no % 2 == 0]))
+
+# 32- Kullanıcının girdiği sayıların karelerini yeni bir liste olarak oluştur. --
+numbers = input("Virgülle ayrılmış sayılar giriniz")
+number = [int(number.strip()) for number in numbers.split(",")]
+print([no **2 for no in number])
+
+# 33- Kullanıcının girdiği sayılardan kaç tanesi 10’dan büyük? --
+numbers = input("Virgülle ayrılmış sayılar giriniz")
+no = [int(no.strip()) for no in numbers.split(",")]
+print(len([on for on in no if on > 10]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
