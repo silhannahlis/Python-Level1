@@ -119,7 +119,10 @@ metin = input("Bir metin giriniz:")
 print(metin.lower().count("e"))
 
 # 19- Kullanıcının yazdığı metindeki tüm noktalama işaretlerini boşlukla değiştir.
-
+import string
+metin = input("Bir metin giriniz:")
+for c in metin:
+    print(' ' if c in string.punctuation else c, end='')
 
 # 20- Girilen cümleyi baş harfleri büyük olacak şekilde (title) dönüştür. --
 cumle = input("Bir cümle giriniz: ")
