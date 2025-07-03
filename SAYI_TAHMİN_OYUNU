@@ -1,0 +1,55 @@
+#SAYI TAHMİN OYUNU
+
+metin = "SAYI TAHMİN OYUNU"
+cıkıs = "stop"
+metin = metin.center(33,"*")
+
+print(metin)
+print("Oyundan çıkış yapmak için \"stop\" yazınız!")
+print("{Tahmin hakkınız: 5}==={0-100 arasında tamsayı}")
+
+from random import randint
+from sys import exit 
+
+while True:
+
+    sayı = randint(0,100)
+    hak = 5
+    
+    while hak > 0:
+    
+        tahmin = input(f"Kalan hakkınız: {hak}\nBir tamsayı giriniz: ")
+        
+        if tahmin.lower() == cıkıs:
+            print("Oyundan Çıkılıyor!")
+            exit()
+        
+        try:
+            tahmin = int(tahmin)   
+        except ValueError:
+            print("Hata: Lütfen geçerli bir tam sayı gir!")
+            continue
+        
+        if tahmin < 0 or tahmin > 100:
+            print("0-100 arasında tamsayı giriniz!")
+            continue       
+        elif sayı == tahmin:
+            print("🎉  Tebrikler! Doğru tahmin!")
+            break
+        elif sayı > tahmin:
+            print("🔺 Daha büyük bir sayı giriniz!")
+        
+        else:
+            print("🔻 Daha küçük bir sayı giriniz!")
+            
+        hak -= 1
+        
+    if hak == 0:
+        print(f"Hakkınız bitti! Doğru sayı: {sayı}")
+        
+    tekrar = input("\nYeniden oynamak ister misiniz? (evet/hayır): ")
+    
+    if tekrar.lower() != "evet":
+        print("Görüşmek üzere Kraliçe! 👑")
+        break
+
