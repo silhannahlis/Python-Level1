@@ -1,0 +1,41 @@
+#HESAP MAKİNESİ
+
+metin = "HESAP MAKİNESİ"
+print(metin.center(50, "*"))
+print("Sırasıyla iki adet sayı gireceksiniz!")
+print("Yapmak istediğiniz işlemin simgesini giriniz:")
+print(" * (çarpma), / (bölme), - (çıkarma), + (toplama)")
+
+def sayi_int(metin):
+    while True:
+        try:
+            return int(input(metin))
+        except ValueError:
+            print("Bir tamsayı giriniz!")
+            
+sayi1 = sayi_int("1. sayı: ")
+sayi2 = sayi_int("2. sayı: ")
+islem = ( '*', '-', '+', '/' )
+
+while True:
+    secilen_islem = input("Yapmak istediğiniz işlemi seçin (*, -, +, /): ").strip()
+
+    if secilen_islem in islem:
+        if secilen_islem == '+':
+            sonuc = sayi1 + sayi2
+        elif secilen_islem == '-':
+            sonuc = sayi1 - sayi2
+        elif secilen_islem == '*':
+            sonuc = sayi1 * sayi2
+        elif secilen_islem == '/':
+            if sayi2 == 0:
+                print("Sıfıra bölme hatası!")
+                continue
+            else:
+                sonuc = sayi1 / sayi2
+        print(f"Sonuç: {sonuc:.2f}")
+        break  
+    else:
+        print("Geçersiz işlem seçtiniz.")
+    
+
