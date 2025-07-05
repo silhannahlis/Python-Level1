@@ -1,0 +1,28 @@
+#ASAL MI?
+print("Asal sayı bulma:")
+print("2 ve üzeri bir sayı giriniz!")
+print("Çıkış yapmak için \"çıkış\" yazınız")
+
+while True:
+    
+    cıkıs = input("bir sayı giriniz: ")
+    
+    if cıkıs.lower() == "çıkış":
+        print("HOŞÇA'kal")
+        break
+    
+    try:
+        sayı = int(cıkıs)
+        if sayı <2:
+            print("En az 2 ve üzeri bir sayı giriniz")
+            continue
+        
+    except ValueError:
+        print("bir tam sayı giriniz!")
+        
+    for i in range(2,int(sayı**0.5)+1):
+        if sayı % i == 0:
+            print(f"{sayı} sayısı asal DEĞİLDİR!")
+            break
+    else:
+        print(f"{sayı} sayısı ASAL bir sayıdır!")
