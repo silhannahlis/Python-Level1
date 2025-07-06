@@ -1,0 +1,100 @@
+# 1- Kullanıcının girdiği bir sayının faktöriyelini hesapla.
+# 2- 1 ile 100 arasındaki çift sayıları ekrana yazdır.
+# 3- Kullanıcının girdiği kelimenin sesli harflerini say.
+# 4- Cümlede hangi harfin kaç kez geçtiğini yazdır.
+# 5- Kullanıcıdan bir cümle al, kelimeleri alfabetik sırala.
+# 6- Adı tersten yazdır.
+# 7- İki kelimenin anagram olup olmadığını kontrol et.
+# 8- Metindeki tüm rakamları sil.
+# 9- Sayının asal olup olmadığını bul.
+# 10- Cümlenin palindrom olup olmadığını kontrol et.
+# 11- Girilen 5 sayıdan pozitif olanları listele.
+# 12- Cümlede kaç farklı kelime olduğunu bul.
+# 13- Sayı listesinden tekrar edenleri kaldır.
+# 14- Kelimelerin ilk harflerinden kısaltma oluştur.
+# 15- Metni küçük harfe çevir, sadece ilk harfini büyük yap.
+# 16- Cümlede kaç tane büyük harf olduğunu bul.
+# 17- Kelimedeki çift sayıda geçen harfleri yazdır.
+# 18- 1-100 arasında 3 ve 5'e bölünen sayıları yazdır.
+# 19- Sayı listesinin çarpımını hesapla.
+# 20- Sayıya kadar olan tek sayıların karelerini yazdır.
+# 21- Bir sayının kaç basamaklı olduğunu hesapla.
+# 22- Sayının tam bölenlerini listele.
+# 23- Kullanıcının adını her harfi ayrı satıra yazdır.
+# 24- Cümledeki kelimeleri sondan başa sırala.
+# 25- Cümlede kaç kelime olduğunu bul (split ile).
+# 26- Metindeki ilk boşluğun indeksini bul.
+# 27- 5 sayı al, listeye ekle, toplamlarını yazdır.
+# 28- Listedeki sayıların ortalamasını bul.
+# 29- Listenin en küçük ikinci elemanını bul.
+# 30- Listeyi büyükten küçüğe sırala.
+# 31- Liste içindeki tek sayıları yazdır.
+# 32- Liste içindeki çift sayıların sayısını bul.
+# 33- Sayıların karelerinden yeni liste oluştur.
+# 34- Sayılardan kaç tanesi 10’dan büyük?
+# 35- Bir listeyi ters çevir (reverse).
+# 36- 1’den 50’ye kadar olan sayıların toplamını yazdır.
+# 37- Kullanıcıdan 10 sayı al, en büyük ve en küçüğünü yaz.
+# 38- Girilen cümledeki noktalama işaretlerini kaldır.
+# 39- Cümledeki tüm kelimeleri büyük harfe çevir.
+# 40- Ad ve soyadı baş harfleri büyük şekilde yazdır.
+# 41- Ad ve soyadı küçük harfle yazdır.
+# 42- Kelimenin ilk ve son harfini yazdır.
+# 43- 3 kelime al, aralarına yıldız koyarak yazdır.
+# 44- Girilen cümlede "Python" kelimesi var mı kontrol et.
+# 45- Cümlede geçen tüm rakamları listele.
+# 46- Cümledeki kelime sayısını say.
+# 47- Sadece sesli harflerden oluşan bir liste oluştur.
+# 48- Girilen sayının çift mi tek mi olduğunu yazdır.
+# 49- Kullanıcının yaşını al, kaç gün yaşadığını hesapla.
+# 50- Doğum yılını gir, kaç yaşında olduğunu hesapla.
+# 51- Girilen cümlede en uzun kelimeyi bul.
+# 52- Girilen cümlede en kısa kelimeyi bul.
+# 53- Bir metni ortadan ikiye ayır ve ters sırayla birleştir.
+# 54- Cümlede geçen her kelimeyi ters çevir.
+# 55- Listedeki pozitif sayıların toplamını yazdır.
+# 56- Listedeki negatif sayıların ortalamasını hesapla.
+# 57- Rastgele 10 sayıdan oluşan bir liste oluştur.
+# 58- Bir kelimenin içinde geçen sesli harfleri sil.
+# 59- Sayı listesinden yalnızca tekil olanları al.
+# 60- Metindeki tüm harfleri birer boşlukla ayır.
+# 61- Cümlede hangi harf kaç kez geçmiş? (dict olarak yazdır)
+# 62- "a" harfini "*" ile değiştir.
+# 63- Kullanıcının girdiği e-posta adresinden sadece kullanıcı adını al.
+# 64- Listedeki sayıları 2 ile çarpıp yeni liste oluştur.
+# 65- Cümlede kaç noktalama işareti geçtiğini say.
+# 66- Girilen metni şifrele: her harfin ASCII değerini yaz.
+# 67- Girilen cümledeki kelimeleri alfabetik sıralayıp tekrar birleştir.
+# 68- Cümlede geçen en sık kelimeyi bul.
+# 69- Metinde geçen tüm rakamları toplayan program.
+# 70- Sadece harf içeren karakterleri listele.
+# 71- Metindeki tüm boşlukları kaldır.
+# 72- Girilen metni satırlara ayır (n karakterde bir).
+# 73- Rastgele sayı üretip, kullanıcının tahminini al (mini oyun).
+# 74- Girilen iki sayının OBEB’ini bul.
+# 75- Girilen iki sayının OKEK’ini bul.
+# 76- Girilen sayının asal çarpanlarını yazdır.
+# 77- Sayıyı string'e çevirip her basamağını ayrı yazdır.
+# 78- Metindeki karakterlerin ASCII toplamını hesapla.
+# 79- Bir kelimenin tüm alt dizilerini (substring) üret.
+# 80- Girilen metindeki kelimeleri büyük harfle başlat (title).
+# 81- Sayı listesini string listeye çevir.
+# 82- 2 liste al, birleşimini ve kesişimini bul.
+# 83- Listedeki sayıları ters sırayla yazdır.
+# 84- Girilen 5 kelimeyi alfabetik sırayla listele.
+# 85- İçinde "@" ve "." olmayan e-postayı geçersiz say.
+# 86- Girilen saati 24 saat formatına çevir.
+# 87- Kullanıcının girdiği metni küçük harf + sayılarla sınırlı tut.
+# 88- Kullanıcıdan ad-soyad al, sadece baş harflerini yazdır.
+# 89- Girilen metinde en çok tekrar eden harfi bul.
+# 90- Girilen metinde büyük harfleri say ve yüzde oranını ver.
+# 91- Cümledeki kelimelerin uzunluklarını bir listeye yaz.
+# 92- "python" kelimesi kaç kez geçiyor, say.
+# 93- Cümlede geçen toplam karakter sayısını (boşluksuz) yaz.
+# 94- Metindeki tüm rakamları silip kalan metni yazdır.
+# 95- Sadece rakamlardan oluşan stringleri listeden ayır.
+# 96- Kullanıcıdan şifre iste, 8 karakterden kısa ise uyarı ver.
+# 97- Kullanıcıdan sayı al, sayının karesi tek mi çift mi kontrol et.
+# 98- Girilen metni şifrele: her harfi bir sonraki harfe kaydır.
+# 99- Kullanıcının girdiği kelimeleri sözlük sırasına göre yazdır.
+# 100- Kullanıcının adı ve doğum yılı ile kaç yaşında olduğunu yazdır.
