@@ -1,0 +1,102 @@
+sayilar = [1,3,5,7,12,19,21]
+##1:while ile sayilar ekrana yazdır
+x = 0
+while x < len(sayilar):
+    print(sayilar[x])
+    x += 1
+##2:başlagıç-bitiş dışarıdan alaradaki tek sayılar
+bas_bit = input("başlangıç ve bitiş gir arada virgül ile: ").split(",")
+bas = int(bas_bit[0])
+bit = int(bas_bit[1])
+i = bas
+while i < bit:
+    i += 1
+    if i % 2 == 1:
+        print(i)
+##3: 1-100 arası azalan yazdır
+x = 100
+while x <= 1:
+    print(i)
+    x -= 1
+    
+##4:dışardan 5 sayı al ve sırala
+adet = 1
+sayı = []
+while adet < 6:
+    sayı.append(int(input(f"{i}.sayı: ")))
+    i += 1
+print("Küçükten büyüğe: ", sorted(sayı))
+print("Büyükten küçüğe: ", sorted(sayı, reverse=True))
+
+##5: Kullanıcıdan kaç adet ürün eklemek istediğini alarak, 
+#her ürünün adını ve fiyatını isteyip,
+#sonrasında eklenen tüm ürünleri listeleyen 
+#bir Python programı yazınız.
+urunler = []
+adet = int(input("kaç ürün eklenecek: "))
+i = 0
+while i < adet:
+    name = input("ürün ismi: ")
+    price = input("fiyat: ")
+    urunler.append({
+        "name": name,
+        "price": price
+    })
+    i += 1
+i = 0
+while i < len(urunler):
+    print(f"ürün adı: {urunler[i]["name"]}, ürün fiyatı: {urunler[i]["price"]}")
+    i += 1
+
+##6:Sayı tahmin. hak kullanıcıdan al. 100 üzerinden puanlama
+#her soru 20puan
+hak = int(input("Hak sayısı: ").strip())  
+import random
+tahminSayisi = random.randint(1,100)
+puan = 100
+puanlama = puan/hak
+sayac = 0
+while hak > 0:
+    try:
+        tahmin = int(input("Tahmininiz: ").strip())
+    except ValueError:
+        print("Lütfen geçerli bir tam sayı girin.")
+        continue
+    sayac += 1
+    hak -= 1
+    if tahmin == tahminSayisi:
+        print("Tebrikler {} bildiniz!".format(sayac))
+        print("toplam puanınız: {}".format(100 - puanlama * (sayac-1)))
+        break
+    elif tahmin < tahminSayisi:
+        print("sayı yukarıda.")
+        print("kalan hakkınız: ", hak)
+    elif tahmin > tahminSayisi:
+        print("sayı aşağıda.")
+        print("kalan hakkınız: ", hak)
+        
+if hak == 0:
+    print("Hakkınız bitti.")
+    print("Tahmin edilecek sayı {}.".format(tahminSayisi))
+
+##7: Girilen sayının asal olduğunu bul.
+print("2 en küçük asal sayıdır. 2'den büyük sayı giriniz")
+asal = True
+while True:
+    try:
+        sayi = int(input("Sayı: "))
+        if sayi < 2:
+            print("2'den büyük sayı giriniz.") 
+            continue
+        break            
+    except:
+        print("2'den büyük sayı giriniz.")  
+for i in range(2, int(sayi*0.5)+1):
+    if sayi % i == 0:
+        asal = False
+        break
+if asal == True:
+    print("{} sayısı asaldır".format(sayi))
+else:
+    print("{} sayısı asal değildir".format(sayi))
+     
